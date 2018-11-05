@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import SearchBar from './components/SearchBar/SearchBar';
 import AppPlayList from './components/AppPlayList/AppPlayList';
+import {Spotify} from './utils/Spotify';
 
 class App extends Component {
   constructor(props) {
@@ -79,12 +80,13 @@ class App extends Component {
 
   searchSpotify(searchTerm) {
     console.log(`Searching spotify for ${searchTerm}`);
+    Spotify.search(searchTerm);
   }
 
   render() {
     return (
       <div>
-          <div class="App">
+          <div className="App">
             <SearchBar searchSpotify={this.searchSpotify}/>
             <AppPlayList
                 onAddToPlayList={this.handleAddTrackToPLayList}

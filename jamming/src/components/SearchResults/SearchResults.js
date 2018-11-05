@@ -6,7 +6,7 @@ class SearchResults extends React.Component {
 
   render() {
     return (
-      <div class="SearchResults">
+      <div className="SearchResults">
         <h2>Results</h2>
         <TrackList tracks={this.props.searchResults} mode='add' clickHandler={this.props.onAddToPlayList}/>
       </div>

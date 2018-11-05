@@ -15,12 +15,12 @@ class Track extends React.Component {
 
   render() {
     return (
-      <div class="Track">
-        <div class="Track-information">
+      <div className="Track">
+        <div className="Track-information">
           <h3>{this.props.track.name}</h3>
           <p>{this.props.track.artists.join(', ')} | {this.props.track.album}</p>
         </div>
-        <a class="Track-action" id={this.props.index} onClick={this.handleClick}>{(this.props.mode==='add')?'+':'-'}</a>
+        <a className="Track-action" id={this.props.index} onClick={this.handleClick}>{(this.props.mode==='add')?'+':'-'}</a>
       </div>
     );
   }

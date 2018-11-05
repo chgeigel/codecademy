@@ -7,7 +7,7 @@ class TrackList extends React.Component {
 
   render() {
     return (
-      <div class="TrackList">
+      <div className="TrackList">
       {
         this.props.tracks.map((track,index) => <Track track={track} index={index} mode={this.props.mode} clickHandler={this.props.clickHandler}/>)
       }

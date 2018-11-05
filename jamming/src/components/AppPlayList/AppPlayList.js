@@ -7,7 +7,7 @@ class AppPlayList extends React.Component {
 
   render() {
     return (
-      <div class="AppPlayList">
+      <div className="AppPlayList">
         <SearchResults onAddToPlayList={this.props.onAddToPlayList} searchResults={this.props.searchResults}/>
         <Playlist onRemoveFromPlayList={this.props.onRemoveFromPlayList} playList={this.props.playList}/>
       </div>
