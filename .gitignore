@@ -407,3 +407,4 @@ typings/
 # Serverless directories
 .serverless
 
+spotify/web-api-auth-examples/
